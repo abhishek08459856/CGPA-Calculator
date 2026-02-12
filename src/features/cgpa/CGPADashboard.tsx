@@ -7,7 +7,7 @@ import { dsSubjects } from "@/data/dssubjects";
 import { esSubjects } from "@/data/essubjects";
 import DegreeToggle from "./DegreeToggle";
 import ModeTabs from "./ModeTabs";
-import CourseRow from "./courseRow";
+import CourseRow from "./CourseRow";
 import ResultPanel from "./ResultPanel";
 
 export default function CGPADashboard() {

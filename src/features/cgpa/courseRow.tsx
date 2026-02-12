@@ -76,7 +76,7 @@ export default function CourseRow({
           className="cursor-pointer hover:opacity-70 transition mt-5"
           aria-label="Remove subject"
         >
-          <Image src="/remove (1).png" alt="Remove" width={20} height={20} />
+          <Image src="/remove-icon.png" alt="Remove" width={20} height={20} />
         </button>
       </div>
 
@@ -116,7 +116,7 @@ export default function CourseRow({
           className="cursor-pointer hover:opacity-70 transition"
           aria-label="Remove subject"
         >
-          <Image src="/remove (1).png" alt="Remove" width={20} height={20} />
+          <Image src="/remove-icon.png" alt="Remove" width={20} height={20} />
         </button>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import "./globals.css";
-import Footer from "@/components/layout/footer";
+import Footer from "@/components/layout/Footer";
 
 import { ReactNode } from "react";
 

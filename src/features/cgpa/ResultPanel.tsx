@@ -1,4 +1,4 @@
-import PerformanceMeter from "./performancemeter";
+import PerformanceMeter from "./PerformanceMeter";
 import { Mode } from "@/core/types";
 
 interface Props {

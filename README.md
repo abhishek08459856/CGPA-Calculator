@@ -83,24 +83,23 @@ src/
 │   ├── layout.tsx         # Root layout with footer
 │   └── globals.css        # Global styles
 ├── components/            # Reusable components
-│   ├── SearchableDropdown.tsx
+│   ├── SearchableDropdown.tsx  # Subject search dropdown
 │   └── layout/
-│       └── footer.tsx     # Footer component
+│       └── Footer.tsx     # Footer component
 ├── features/              # Feature-based modules
 │   └── cgpa/
-│       ├── CGPADashboard.tsx    # Main dashboard
-│       ├── courseRow.tsx        # Course input row
-│       ├── DegreeToggle.tsx     # Degree selector
-│       ├── ModeTabs.tsx         # Mode switcher
-│       ├── performancemeter.tsx # CGPA visualization
-│       └── ResultPanel.tsx      # Results display
-├── core/                  # Business logic
+│       ├── CGPADashboard.tsx    # Main dashboard controller
+│       ├── CourseRow.tsx        # Course input row component
+│       ├── DegreeToggle.tsx     # Degree selector (DS/ES)
+│       ├── ModeTabs.tsx         # Mode switcher (Current/Ongoing/Future)
+│       ├── PerformanceMeter.tsx # CGPA circular visualization
+│       └── ResultPanel.tsx      # Results display panel
+├── core/                  # Business logic & types
 │   ├── cgpa.ts           # CGPA calculation logic
-│   ├── gradeScale.ts     # Grade point mapping
-│   └── types.ts          # TypeScript types
+│   └── types.ts          # TypeScript type definitions
 └── data/                 # Subject data
-    ├── dssubjects.ts     # Data Science subjects
-    └── essubjects.ts     # Electronic Systems subjects
+    ├── dssubjects.ts     # Data Science subjects catalog
+    └── essubjects.ts     # Electronic Systems subjects catalog
 ```
 
 ## 🎨 Design Features
