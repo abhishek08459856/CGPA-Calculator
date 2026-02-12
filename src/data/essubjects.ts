@@ -1,0 +1,41 @@
+export const esSubjects = [
+  // -------- FOUNDATION --------
+  { id: "HS1101", name: "English I", credits: 4 },
+  { id: "MA1101", name: "Math for Electronics I", credits: 4 },
+  { id: "HS1102", name: "English II", credits: 4 },
+  { id: "EE1101", name: "Electronic Systems Thinking and Circuits", credits: 4 },
+  { id: "EE1901", name: "Electronic Systems Thinking and Circuits Lab", credits: 1 },
+  { id: "CS1101", name: "Introduction to C Programming", credits: 4 },
+  { id: "CS1901", name: "C Programming Laboratory", credits: 1 },
+  { id: "CS1102", name: "Introduction to Linux and Programming", credits: 4 },
+  { id: "CS1902", name: "Linux Systems Laboratory", credits: 1 },
+  { id: "EE1102", name: "Digital Systems", credits: 4 },
+  { id: "EE1103", name: "Electrical and Electronic Circuits", credits: 4 },
+  { id: "EE1902", name: "Electronics Laboratory", credits: 3 },
+  { id: "CS2101", name: "Embedded C Programming", credits: 4 },
+  { id: "CS2901", name: "Embedded C Programming Laboratory", credits: 1 },
+
+  // -------- DIPLOMA --------
+  { id: "EE2101", name: "Signals and Systems", credits: 4 },
+  { id: "EE2102", name: "Analog Electronic Systems", credits: 4 },
+  { id: "EE2901", name: "Analog Electronics Laboratory", credits: 3 },
+  { id: "CS1002", name: "Python Programming", credits: 4 },
+  { id: "EE2103", name: "Digital System Design", credits: 4 },
+  { id: "EE2902", name: "Digital System Design Laboratory", credits: 1 },
+  { id: "EE3101", name: "Digital Signal Processing", credits: 4 },
+  { id: "EE3103", name: "Sensors and Applications", credits: 4 },
+  { id: "EE3901", name: "Sensors Laboratory", credits: 3 },
+  { id: "EE4108", name: "Electronic Testing and Measurement", credits: 4 },
+  { id: "EE4104", name: "Computer Organisation", credits: 4 },
+  { id: "EE3999", name: "Electronics System Project", credits: 2 },
+  { id: "EE4999", name: "Signals and Systems Project", credits: 2 },
+
+  // -------- DEGREE --------
+  { id: "MA2101", name: "Math for Electronics II", credits: 4 },
+  { id: "EE4101", name: "Embedded Linux and FPGAs", credits: 4 },
+  { id: "EE4901", name: "Embedded Linux and FPGAs Lab", credits: 1 },
+  { id: "EE3104", name: "Electromagnetic Fields and Transmission Lines", credits: 4 },
+  { id: "EE4102", name: "Electronic Product Design", credits: 4 },
+  { id: "GN3001", name: "Strategies for Professional Growth", credits: 4 },
+  { id: "EE3102", name: "Control Engineering", credits: 4 },
+];
