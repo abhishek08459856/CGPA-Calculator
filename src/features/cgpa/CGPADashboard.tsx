@@ -57,6 +57,15 @@ export default function CGPADashboard() {
   const subjects =
     degree === "DS" ? dsSubjects : esSubjects;
 
+  // Get already selected subject IDs
+  const selectedCompletedIds = completedCourses
+    .map(c => c.subjectId)
+    .filter(id => id !== "");
+  
+  const selectedPlannedIds = plannedCourses
+    .map(c => c.subjectId)
+    .filter(id => id !== "");
+
   function addCompleted() {
     setCompletedCourses([
       ...completedCourses,
@@ -140,6 +149,7 @@ export default function CGPADashboard() {
               key={course.id}
               course={course}
               subjects={subjects}
+              excludeIds={selectedCompletedIds.filter(id => id !== course.subjectId)}
               onChange={(updated) =>
                 setCompletedCourses((prev) =>
                   prev.map((c) =>
@@ -194,6 +204,7 @@ export default function CGPADashboard() {
                   key={course.id}
                   course={course}
                   subjects={subjects}
+                  excludeIds={[...selectedCompletedIds, ...selectedPlannedIds.filter(id => id !== course.subjectId)]}
                   onChange={(updated) =>
                     setPlannedCourses((prev) =>
                       prev.map((c) =>

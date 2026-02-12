@@ -7,6 +7,7 @@ import Image from "next/image";
 interface Props {
   course: CourseEntry;
   subjects: { id: string; name: string; credits: number }[];
+  excludeIds?: string[];
   onChange: (updated: CourseEntry) => void;
   onRemove: () => void;
 }
@@ -14,17 +15,23 @@ interface Props {
 export default function CourseRow({
   course,
   subjects,
+  excludeIds = [],
   onChange,
   onRemove,
 }: Props) {
   const grades: Grade[] = ["S", "A", "B", "C", "D", "E", "U"];
+
+  // Filter out already selected subjects
+  const availableSubjects = subjects.filter(
+    subject => !excludeIds.includes(subject.id)
+  );
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 gap-2 sm:gap-3 items-center mb-3 p-3 md:p-0 bg-gray-900/30 md:bg-transparent rounded-lg md:rounded-none">
       <div className="md:col-span-6">
         <label className="block md:hidden text-xs text-gray-400 mb-1">Subject</label>
         <SearchableDropdown
-          options={subjects}
+          options={availableSubjects}
           value={course.subjectId}
           onChange={(id) => {
             const selected = subjects.find(s => s.id === id);
