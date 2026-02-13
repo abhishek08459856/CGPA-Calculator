@@ -6,7 +6,7 @@ export const gradePoints: Record<Grade, number> = {
   B: 8,
   C: 7,
   D: 6,
-  E: 5,
+  E: 4,
   U: 0,
 };
 
